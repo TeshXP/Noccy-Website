@@ -1,0 +1,190 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Equestria;
+    background-image: linear-gradient(to top, red, black);
+}
+
+@font-face {
+    font-family: 'Equestria';
+    src: url("./font/Equestria.otf");
+}
+
+
+/*Header Section*/
+#header_image {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.scroller {
+    max-width: 600px;
+    
+}
+
+.scroller[data-animated=true] {
+    
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80% transparent);
+}
+
+.scroller[data-animated=true] .scroller_inner {
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
+    width: max-content;
+}
+
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+.scroller_inner {
+    padding-block: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+
+.tag-list li {
+    padding: 1rem;
+    background: black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem white;
+}
+
+#header_title {
+    color: black;
+    text-shadow: 0 0 6px #003153;
+    background-color: #841617;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 8px;
+}
+
+#header_desc {
+    background-color: #841617;
+    color: black;
+    text-shadow: 0 0 6px #003153;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+/*Activities Section*/
+#activites {
+    margin-top: 0;
+    height: 500px;
+}
+
+#applebottomrx7 {
+    height: 150px;
+    width: auto;
+}
+
+#bronyAudioImage {
+    width: 50px;
+    height: auto;
+    visibility: hidden;
+}
+
+#h3h3 {
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 30px;
+
+}
+
+#rx8shit {
+    visibility: hidden;
+}
+
+.h3h3h3 {
+    font-size: 40px;
+    margin: 0 0;
+}
+
+.activity_image {
+    width: 150px;
+}
+
+.h3p {
+    font-size: 30px;
+}
+
+#activities_image_flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.activities_image_flex_div {
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+/*Footer Section*/
+#nocturnal {
+    width: 300px;
+    height: auto;
+    margin: 17px 10px;
+    border-radius: 10px;
+}
+
+#guide {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(168, 40, 79);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-bottom: 4px solid black;
+}
+
+.guide_details {
+    margin-right: 5px;
+}
+
+#floatingImage {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: auto;
+    z-index: 1000;
+}
+
+/*Link teehee*/

@@ -1,0 +1,9 @@
+body {
+    background-image: linear-gradient(to right, black, red);
+    text-align: center;
+    margin: 0;
+}
+
+#noccy {
+    margin: 0;
+}
